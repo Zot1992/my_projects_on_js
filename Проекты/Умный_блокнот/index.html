@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Управление заметками</h1>
+            <div class="toolbar">
+                <button class="btn" id="generateReportBtn">Сгенерировать отчет</button>
+                <button class="btn" id="protectNotesBtn">Защитить заметки</button>
+            </div>
+        </header>
+
+        <section class="notes-section">
+            <div class="filter-section">
+                <input type="text" class="filter-input" id="filterInput" placeholder="Поиск по тегам">
+                <select class="sort-select" id="sortSelect">
+                    <option value="title">По заголовку</option>
+                    <option value="date">По дате</option>
+                    <option value="length">По длине</option>
+                </select>
+                <div class="status-filter">
+                    <button class="btn" id="completed"> Показывать выполненные</button>
+                    <button class="btn" id="unfulfilled"> Показывать невыполненные</button>
+                    <button class="btn" id="All"> Показывать все</button>
+                </div>
+            </div>
+
+            <ul class="notes-list" id="notesList">
+                <!-- Здесь будут отображаться заметки -->
+            </ul>
+
+            <div id="edit"></div>
+
+            <section class="text-tools-section"></section>
+
+            <div class="new-note-form">
+                <h2>Новая заметка</h2>
+                <form>
+                    <input type="text" class="form-input" id="title" placeholder="Заголовок" required>
+                    <textarea class="form-textarea" id="note-text" placeholder="Текст заметки" required></textarea>
+                    <input type="text" class="form-input" id="tag" placeholder="Теги (через запятую)">
+                    <div class="status-checkbox">
+                        <input type="checkbox" id="check"> Выполнена
+                    </div>
+                    <button class="btn" id="saveNoteBtn">Добавить заметку</button>
+                </form>
+            </div>
+        </section>
+
+
+
+        <section class="report-section" id="reportSection">
+            <h2>Отчет</h2>
+            <div class="report-content">
+                <p>Общее количество заметок: <span id="totalNotes"></span></p>
+                <p>Общее количество символов: <span id="totalChars"></span></p>
+                <p>Общее количество слов: <span id="totalWords"></span></p>
+                <p>Общее количество уникальных тегов: <span id="numberOfTags"></span></p>
+                <p>Уникальные теги: <span id="uniqueTags"></span></p>
+                <p>Самая длинная заметка: <span id="longestNote"></span></p>
+                <p>Самая короткая заметка: <span id="shortestNote"></span></p>
+            </div>
+        </section>
+
+        <div class="password-section new-note-form"></div>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
