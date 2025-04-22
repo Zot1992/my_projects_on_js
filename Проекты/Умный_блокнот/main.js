@@ -28,6 +28,38 @@ const passwordSection = document.querySelector('.password-section');
 let arrNote = []; // Хранит все заметки.
 
 
+function noteObj(arr, index) { // Показывает какие ключи и значения хранит заметка
+
+    let note = Object.entries(arr[index]);
+    let textArray = note.map(([key, value]) => `${key}: ${value}`);
+    let text = textArray.join('\n');
+
+    return text;
+}
+
+function allChar(arr, index) { // Подсчет всех символов в заметке
+
+    let values = Object.values(arr[index]);
+    let str = JSON.stringify(values, null, 0);
+    let delSpace = str.split('').map(char => char.trim().replace(' ', '')); // Удаляем пробелы
+    let allChar = [];
+    for (let char of delSpace) {
+        if (char !== ',' && char !== '[' && char !== ']' && char !== '"') {
+            allChar.push(char);
+        }
+    }
+
+    return allChar.length;
+}
+
+function presenceTag(arr, index) { // Проверка наличия тегов. Если они есть, то выводит на экран
+    let tags = [];
+    (arr[index].tag) ? tags.push(arr[index].tag) : console.log('Теги отсуствует');
+
+    return tags;
+}
+
+
 function viewAllElements(arr) { // Отображает содержимое массива и добавляет кнопки
 
     notesList.textContent = '';
@@ -58,6 +90,13 @@ function viewAllElements(arr) { // Отображает содержимое м�
         li.appendChild(btnEdit);
         li.appendChild(btnDel);
         notesList.appendChild(li);
+
+        li.addEventListener('click', function () { // При нажатии на заметку показывает ключи, значения и общее колличесво символов 
+            const index = parseInt(this.dataset.index);
+            alert(`Ключи и значения в заметке: ${noteObj(arrNote, index)} \n
+            Общее колличесво символов в заметке: ${allChar(arrNote, index)}  
+            Теги в заметке: ${presenceTag(arrNote, index)}`);
+        });
     });
 
     const btnEdit = document.querySelectorAll('.btnNote-edit');
@@ -627,78 +666,66 @@ generateReportBtn.addEventListener('click', function () {
     }
 
     function unTags() { // Уникальные теги
-        let arrTags = new Set(); // Используем Set для хранения уникальных тегов
+        let arrTags = [];
         let tag = '';
+        let Tags = [];
+        let uniqueTags = [];
 
-        for (let el of arrNote) {
-
-            let tags = el.tag.split(',').map(t => t.trim());
-
-            // Добавляем каждый тег в Set
-            for (let t of tags) {
-                arrTags.add(t);
+        for (let el of arrNote) { //Добавляем все теги в массив
+            if (!arrTags.includes(el.tag)) {
+                arrTags.push(el.tag);
             }
         }
 
-        // Преобразуем Set обратно в массив 
-        const uniqueTags = Array.from(arrTags);
+        // Разделение тегов по запятой и удаление пробелов
+        for (let el of arrTags) {
+            let un = el.split(',').map(tag => tag.trim().replace(' ', '')); // Удаляем пробелы
+            Tags.push(un);
+        }
 
-        // Объединяем теги в строку с запятыми
+        let flattenedUniqueTags = Tags.flat();// Раскрываем все скобки что бы был единый массив
+
+        for (let el of flattenedUniqueTags) { // Убираем дублированные теги и добавляем только уникальные
+            if (!uniqueTags.includes(el)) {
+                uniqueTags.push(el);
+            }
+        }
+
         tag = uniqueTags.join(', ');
 
         return tag;
     }
 
     function countTag() { // Количесво уникальных тегов
-        let arrTags = new Set();
-
-        for (let el of arrNote) {
-
-            let tags = el.tag.split(',').map(t => t.trim());
-
-            for (let t of tags) {
-                arrTags.add(t);
+        let arr = [];
+        let count = 0;
+        arr = Array.from(Tags);
+        arr.forEach((el) => {
+            if (el === '#') {
+                count++
             }
-        }
-
-        const count = Array.from(arrTags).length;
+        })
 
         return count;
     }
 
 
     function quantityChars() { // Подсчет общее количесво символов
-        let count = 0;
-
-        for (let el of arrNote) {
-            for (let i = 0; i < el.noteText.length; i++) { // Обходим текст каждой заметки 
-
-                if (el.noteText[i] != ' ') {  // Если символ не проблел, то считаем его
-                    count++;
-                }
-            }
-        }
+        let count = arrNote.reduce((accumulator, el) => {
+            // Для каждого элемента el считаем количество непустых символов в noteText
+            let nonSpaceCount = Array.from(el.noteText).filter(char => char !== ' ').length;
+            return accumulator + nonSpaceCount; // Суммируем с аккумулятором
+        }, 0); // Начальное значение аккумулятора - 0
 
         return count;
     }
 
     function quantityWords() { // Подсчет общего количества слов
-        let count = 0;
-
-        for (let el of arrNote) {
-            let inWord = false; // Сбрасываем флаг для каждой заметки
-
-            for (let char of el.noteText) {
-                if (char !== ' ') {
-                    if (!inWord) { // Если мы не в слове
-                        inWord = true; // Входим в слово
-                        count++;
-                    }
-                } else {
-                    inWord = false; // Если пробел, выходим из слова
-                }
-            }
-        }
+        let count = arrNote.reduce((accumulator, el) => {
+            //используем метод filter, чтобы удалить пустые строки из массива. Это необходимо, поскольку при использовании split(' ') могут возникать пустые элементы, если в тексте есть несколько пробелов подряд.
+            let wordCount = el.noteText.split(' ').filter(word => word.length > 0).length; // Условие word.length > 0 проверяет, что длина слова больше нуля, что позволяет оставить только непустые строки.
+            return accumulator + wordCount;
+        }, 0);
 
         return count;
     }
