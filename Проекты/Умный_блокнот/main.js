@@ -27,38 +27,12 @@ const passwordSection = document.querySelector('.password-section');
 
 let arrNote = []; // Хранит все заметки.
 
-
-function noteObj(arr, index) { // Показывает какие ключи и значения хранит заметка
-
-    let note = Object.entries(arr[index]);
-    let textArray = note.map(([key, value]) => `${key}: ${value}`);
-    let text = textArray.join('\n');
-
-    return text;
-}
-
-function allChar(arr, index) { // Подсчет всех символов в заметке
-
-    let values = Object.values(arr[index]);
-    let str = JSON.stringify(values, null, 0);
-    let delSpace = str.split('').map(char => char.trim().replace(' ', '')); // Удаляем пробелы
-    let allChar = [];
-    for (let char of delSpace) {
-        if (char !== ',' && char !== '[' && char !== ']' && char !== '"') {
-            allChar.push(char);
-        }
-    }
-
-    return allChar.length;
-}
-
 function presenceTag(arr, index) { // Проверка наличия тегов. Если они есть, то выводит на экран
     let tags = [];
     (arr[index].tag) ? tags.push(arr[index].tag) : console.log('Теги отсуствует');
 
     return tags;
 }
-
 
 function viewAllElements(arr) { // Отображает содержимое массива и добавляет кнопки
 
@@ -90,13 +64,6 @@ function viewAllElements(arr) { // Отображает содержимое м�
         li.appendChild(btnEdit);
         li.appendChild(btnDel);
         notesList.appendChild(li);
-
-        li.addEventListener('click', function () { // При нажатии на заметку показывает ключи, значения и общее колличесво символов 
-            const index = parseInt(this.dataset.index);
-            alert(`Ключи и значения в заметке: ${noteObj(arrNote, index)} \n
-            Общее колличесво символов в заметке: ${allChar(arrNote, index)}  
-            Теги в заметке: ${presenceTag(arrNote, index)}`);
-        });
     });
 
     const btnEdit = document.querySelectorAll('.btnNote-edit');
@@ -315,21 +282,6 @@ function editNote(index) { // Редактирует заметку
             alert('Введенного вами текста нет в заметке!');
         }
     })
-
-    // trimSpacesBtn.addEventListener('click', function () {
-    //     const inputText = textInput.value.trim();
-    //     if (arrNote[index].noteText.includes(inputText)) {
-    //         const pattern = new RegExp('\\s*' + inputText.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '\\s*', 'g');
-    //         const trimmedText = inputText.replace(/\s+/g, ' ');
-    //         arrNote[index].noteText = arrNote[index].noteText.replace(pattern, trimmedText);
-
-    //         view(arrNote);
-    //         textInput.value = '';
-    //     } else {
-    //         alert('Введенного вами текста нет в заметке!');
-    //     }
-    // });
-
 
     trimSpacesBtn.addEventListener('click', function () {
         if (arrNote[index].noteText.includes(textInput.value)) {
@@ -625,7 +577,6 @@ generateReportBtn.addEventListener('click', function () {
     let noteShort = 'Нет'; // Самая короткая заметка
     let Tags = ''; // Уникальные теги
 
-
     function findNoteLong() { // Поиск длинной заметки
 
         let maxChar = 0;
@@ -708,7 +659,6 @@ generateReportBtn.addEventListener('click', function () {
 
         return count;
     }
-
 
     function quantityChars() { // Подсчет общее количесво символов
         let count = arrNote.reduce((accumulator, el) => {
