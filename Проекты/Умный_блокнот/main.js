@@ -724,12 +724,12 @@ protectNotesBtn.addEventListener('click', function () {
     input.addEventListener('input', function () {
         let value = parseInt(input.value);
 
-        if (value >= 4 && value <= 20) { // Проверяем диапазон
+        if (value >= 4 && value <= 9) { // Проверяем диапазон
             span.textContent = generatePass(value);
         } else {
             span.textContent = '';
             input.value = '';
-            alert('Введите число от 4 до 20.');
+            alert('Введите число от 4 до 9.');
         }
 
         function generatePass(length) {
