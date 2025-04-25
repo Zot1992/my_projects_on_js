@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .controls label, .controls select, .controls button {
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #find{
+    margin-bottom: 20px ;
+  }
+
+  #find button {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  #find input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .summary {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+  }
+  
+  .catalog-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .catalog-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .catalog-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .add-item {
+    margin-top: 20px;
+  }
+  
+  .add-item input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .add-item button {
+    margin-top: 10px;
+  }
+
+  #delItem{
+    margin-left: 10px;
+  }
+
+  #delName{
+    margin-left: 13px;
+  }
+
+  

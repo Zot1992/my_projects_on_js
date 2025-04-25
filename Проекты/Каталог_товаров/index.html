@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог товаров</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Каталог товаров</h1>
+
+    <!-- Панель управления -->
+    <div class="controls">
+      <label for="categoryFilter">Фильтр по категории:</label>
+      <select id="categoryFilter">
+        <option value="all">Все</option>
+        <option value="Электроника">Электроника</option>
+        <option value="Одежда">Одежда</option>
+      </select>
+
+      <button id="sortByName">Сортировать по названию</button>
+      <button id="reverseItems">Развернуть порядок</button>
+      <button id="showDiscounted">Показать со скидкой >10%</button>
+    </div>
+
+    <!-- Поиск -->
+    <div id="find">
+      <button id="findTag">Найти по тегу</button>
+      <input type="text" id="findTagName" placeholder="Введите тег">
+      <button id="findName">Найти по названию</button>
+      <input type="text" id="findNameInput" placeholder="Введите название">
+    </div>
+
+    <!-- Общая информация -->
+    <div class="summary">
+      <p>Общая стоимость: <span id="totalPrice">0</span> руб.</p>
+      <p>Все товары со скидкой: <span id="allDiscounted">Да</span></p>
+      <p>Теги: <span id="allTags"></span></p>
+    </div>
+
+    <!-- Список товаров -->
+    <ul id="catalogList" class="catalog-list"></ul>
+
+    <!-- Форма добавления товара -->
+    <div class="add-item">
+      <h3>Добавить товар</h3>
+      <input type="text" id="newName" placeholder="Название">
+      <input type="number" id="newPrice" placeholder="Цена">
+      <input type="text" id="newCategory" placeholder="Категория">
+      <input type="number" id="newDiscount" placeholder="Скидка (%)">
+      <button id="addItem">Добавить</button>
+      <button id="delItem">Удалить</button>
+      <input type="text" id="delName" placeholder="Удаление по названию">
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
