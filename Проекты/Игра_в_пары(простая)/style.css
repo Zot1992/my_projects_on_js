@@ -1,0 +1,75 @@
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.button {
+    position: absolute;
+    width: 200px;
+    top: 600px;
+    /* сверху | справа | снизу | слева */
+    margin: auto 100px auto 100px;
+}
+
+.card {
+    position: relative;
+
+    width: 200px;
+    height: 280px;
+   
+
+}
+
+.card:nth-child(n+3) {
+    /*Это делает отступ сверху для третьего элемента в каждой строке, независимо от того, сколько элементов находится в строке или насколько широк экран */
+    margin-top: 25px;
+}
+
+/* .img {
+    position: relative;
+    z-index: 1;
+} */
+
+.number {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50px;
+    color: #ffffff;
+    max-width: 365px; /* ширина блока с текстом */
+    backdrop-filter: blur(3px);/* размытие заднего фона */
+    z-index: 2;
+    display: none;
+}
+
+
+.img {
+    background-image: url(../Игра_в_пары/img/images.jpg);
+    background-position: center center;
+}
+
+.vid {
+    font-size: 16px;
+    background-size: 100%;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.vid:hover {
+    font-size: 20px;
+    background-size: 105%;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
