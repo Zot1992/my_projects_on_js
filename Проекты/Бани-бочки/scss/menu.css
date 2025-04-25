@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* Стилизация меню для планшета и телефона */
+.header__nav {
+  position: absolute;
+  right: 36px;
+  display: block;
+}
+.header__menu {
+  display: flex;
+  position: relative;
+  z-index: 4;
+}
+.header .menu__item--mobile {
+  list-style: none;
+  margin: 0px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.container-nav--mobile {
+  display: none;
+}
+
+.container-nav--comp {
+  display: flex;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* Модальный (фон) */
+.modal {
+  display: none;
+  /* Скрыто по умолчанию */
+  position: fixed;
+  /* Оставаться на месте */
+  z-index: 5;
+  /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0);
+  /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Черный с непрозрачностью */
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  /* Делает фон сзади размытым */
+  /* Модальное содержание/коробка */
+}
+.modal__content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% сверху и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+.modal__lock {
+  overflow: hidden;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text {
+  color: #000;
+  font-family: "Manrope";
+  text-align: center;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 26px;
+  color: #000;
+  font-family: "Manrope";
+  text-align: center;
+}
+
+.Photos-madal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-modal {
+  width: 100%;
+}
+.img-modal:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1025px) {
+  .modal__content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=modal.css.map */

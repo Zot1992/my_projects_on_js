@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background: #000000;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    font-weight: 700;
+    color: #ffffff;
+    padding: 5px 30px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    /* Нужно что бы сбросить стандартную стилизацию кнопки */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    background: #000000;
+    font-size: 27px;
+    border-radius: 43px;
+    width: 316px;
+    line-height: 45px;
+    padding: 0px;
+    cursor: pointer;
+
+
+    &:hover {
+        text-decoration: none;
+        color: #000000;
+        background-color: #FFC700;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+
+    &:focus {
+        text-decoration: none;
+        color: #464040;
+        background-color: #7e7777;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+
+    &>a:hover {
+        text-decoration: none;
+        color: #000000;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+
+    &>a {
+        text-decoration: none;
+    }
+}
+
+
+.img--icon {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+}
+
+.contact {
+    border-radius: 43px;
+    border: solid 1px #ffffff;
+    padding: 5px 30px;
+    line-height: 45px;
+
+    &:hover {
+        text-decoration: none;
+        color: #000000;
+        background-color: #FFC700;
+        -webkit-transition: 300ms;
+        -o-transition: 300ms;
+        -moz-transition: 300ms;
+        -ms-transition: 300ms;
+        transition: 300ms;
+    }
+}
+
+.h1--headings {
+    font-size: 70px;
+    text-align: left;
+}
+
+.wrapper {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.menu {
+    &__item {
+        display: inline-block;
+        align-items: center;
+        text-decoration: none;
+        line-height: 45px;
+        border: none;
+        border-radius: 43px;
+        color: #ffffff;
+        border: solid 1px #ffffff;
+
+        &:hover {
+            text-decoration: none;
+            background-color: #FFC700;
+            -webkit-transition: 300ms;
+            -o-transition: 300ms;
+            -moz-transition: 300ms;
+            -ms-transition: 300ms;
+            transition: 300ms;
+        }
+
+        &>a:hover {
+            text-decoration: none;
+            color: #000000;
+            -webkit-transition: 300ms;
+            -o-transition: 300ms;
+            -moz-transition: 300ms;
+            -ms-transition: 300ms;
+            transition: 300ms;
+        }
+
+        &>a {
+            text-decoration: none;
+        }
+    }
+}
+
+.header,
+.container {
+    max-width: 1350px;
+    margin: auto;
+}
+
+.header {
+    &__body {
+        left: 0;
+        top: 0;
+        width: 100%;
+        -o-backdrop-filter: blur(3px);
+        -moz-backdrop-filter: blur(3px);
+        -ms-backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+    }
+
+    &__container {}
+
+    .container-nav--comp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav--comp {}
+
+    &__menu_row {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.container {
+
+    &--position-relative {
+        margin: 70px 0px;
+        position: relative;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse
+    }
+
+    &__colom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &--image {
+        border-radius: 43px;
+        border: none;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &__sale {
+        &-image {
+            background-image: url(../img/Фон_первого_заголовка.jfif);
+            width: 818px;
+            height: 766px;
+        }
+
+        &-text {}
+
+        &-h1 {}
+
+        &-slogan {
+            font-size: 40px;
+            text-align: left;
+        }
+
+        &-button {
+            width: 100%;
+        }
+    }
+
+    &__we {
+        &-info {
+            flex-direction: row;
+        }
+
+        &-image {
+            width: 660px;
+            height: 624px;
+            background-image: url(../img/Фон_второго_заголовка.jfif);
+        }
+
+        &-text {
+            width: 600px;
+            height: auto;
+            text-align: left;
+            font-size: 25px;
+        }
+    }
+
+    &__catalog {
+
+        &-h2 {
+            font-size: 50px;
+            text-align: left;
+        }
+
+        &-stylization {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+
+            &:not(:nth-child(1)) {
+                margin-top: 100px;
+            }
+        }
+
+        &-stylization--size {
+            width: 100%;
+            height: 504px;
+        }
+
+        &-text {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+        }
+
+        &-frame {
+            width: 100%;
+            height: 250px;
+            border-radius: 43px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+        }
+
+        &-background_1 {
+            background-image: url(../img/Квадро-1_1.jpg);
+        }
+
+        &-background_2 {
+            background-image: url(../img/Квадро-2_2.jpg);
+        }
+
+        &-background_3 {
+            background-image: url(../img/Квадро-3_3.jpg);
+        }
+
+        &-background_4 {
+            background-image: url(../img/Квадро-4.jfif);
+        }
+
+        &-background_5 {
+            background-image: url(../img/Квадро_новая/1.jpg);
+        }
+
+        &-background_6 {
+            background-image: url(../img/Овал-1_8.jpg);
+        }
+
+        &-background_7 {
+            background-image: url(../img/Квадроовал-1_6.jpg);
+        }
+
+        &-background_8 {
+            background-image: url(../img/Круглая-1_7.jpg);
+        }
+
+        &-background_9 {
+            background-image: url(../img/круглая/4.jpg);
+        }
+
+        &-background_10 {
+            background-image: url(../img/Угловая/1.jpg);
+        }
+
+        &-background_11 {
+            background-image: url(../img/На_колесах/1.jpg);
+        }
+    }
+
+    &__contacts {
+        &-info {
+            flex-direction: row;
+
+            &--position {
+                justify-content: flex-start;
+            }
+        }
+
+        &-position_content {
+            display: flex;
+
+            &:first-child {
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+        }
+
+        &-image {
+            width: 919px;
+            height: 661px;
+            background-image: url(../img/Фон_контактов.jfif);
+        }
+
+        &-contact-1 {}
+
+        &-contact-2 {}
+    }
+
+    .sale {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .link {
+        &:hover {
+            color: #FFC700;
+        }
+    }
+}
