@@ -1,0 +1,223 @@
+@media(max-width: 768px) {
+
+    .header,
+    .container,
+    .footer-container {
+        margin: 0 5.214vw;
+    }
+
+    .container {
+        margin-top: 20vw;
+    }
+
+    .button {
+        width: 80%;
+        border-radius: 30px;
+        line-height: 10.2vw;
+        font-size: clamp(0.9375rem, -0.4048rem + 6.7114vw, 2.8125rem);
+    }
+
+    .button>a {
+        text-decoration: none;
+        font-size: clamp(0.9375rem, -0.4048rem + 6.7114vw, 2.8125rem);
+    }
+
+    .button-mobile {
+        margin: auto;
+        width: 80%;
+        border-radius: 30px;
+        line-height: 10.2vw;
+    }
+
+    .button-mobile>a {
+        text-decoration: none;
+        font-size: clamp(0.9375rem, -0.4048rem + 6.7114vw, 2.8125rem);
+    }
+
+    .h1_headings {
+        width: 100%;
+        font-size: clamp(1.5625rem, 0.1755rem + 6.9351vw, 3.5rem);
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 10vw;
+        margin-bottom: 4.88545vw;
+    }
+
+    .fon-mobile {
+        width: 100%;
+        height: 0;
+        padding-top: 83.5%;
+    }
+
+    .container_part1-sale {
+        display: block;
+    }
+
+    .container_part1-sale-slogan {
+        font-size: clamp(0.9375rem, -0.1811rem + 5.5928vw, 2.5rem);
+        font-weight: 600;
+        line-height: 6vw;
+    }
+
+    .container_part1-sale-fon-mobile {
+        display: block;
+        border-radius: 10px;
+        background-image: url(../img/КАртинка\ бани.png);
+    }
+
+    .container_part1-sale-text {
+        gap: 3.8vw;
+    }
+
+    .container_part1-sale-fon {
+        display: none;
+    }
+
+    .container-position-relative {
+        margin: 9.2vw 0px;
+    }
+
+    .container_part2-we-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container_part2-we-info-position {
+        margin-bottom: 6.5vw;
+    }
+
+    .container_part2-we-info-position-text {
+        margin: 0;
+        Width: 100%;
+        text-align: left;
+        font-size: clamp(0.9375rem, 0.0426rem + 4.4743vw, 2.1875rem);
+        font-weight: 500;
+        line-height: 6.516vw;
+    }
+
+
+
+    .container_part3-catalog-content-goods {
+        margin-top: 11.8vw;
+    }
+
+    .container_part3-catalog-content-h2 {
+        font-size: clamp(0.9375rem, -0.9926rem + 8.5784vw, 3.125rem);
+    }
+
+    .container_part3-catalog-content-stylization {
+        height: auto;
+        width: 90vw;
+    }
+
+    .container_part3-catalog-content-stylization:not(:nth-child(1)) {
+        margin-top: 6.5vw;
+    }
+
+    .container_part3-catalog-content-baths-stylization {
+        width: 100%;
+        height: 0;
+        padding-top: 98.5%;
+    }
+
+
+
+
+
+    .container_part3-catalog-content-baths-frame {
+        width: 100%;
+        height: 42vw;
+        align-items: flex-start;
+        top: 46.7vw;
+    }
+
+    .container_part3-catalog-content-baths-text {
+        font-size: clamp(0.9375rem, -0.625rem + 7.8125vw, 3.125rem);
+        font-weight: 700;
+        line-height: 10vw;
+    }
+
+    .container_part4-contacts-info {
+        flex-direction: column;
+    }
+
+    .container_part4-contacts-info-position {
+        display: block;
+        margin: 6.5vw 0;
+    }
+
+    .container_part4-contact-1 {
+        padding: 1.6vw 4.7vw;
+        font-weight: 600;
+        font-size: clamp(0.9375rem, -0.4048rem + 6.7114vw, 2.8125rem);
+    }
+
+    .container_part4-contacts-info-position-text:first-child {
+        margin-bottom: 2.6vw;
+    }
+
+    .container_part4-contacts-info-position-text:not(:first-child) {
+        margin: 2.6vw 0 2.6vw 0;
+    }
+
+    .img-icon-info {
+        width: 7.2vw;
+        height: 7.2vw;
+    }
+
+    .sale {
+        font-size: clamp(0.9375rem, 0.2664rem + 3.3557vw, 1.875rem);
+    }
+
+    .link {
+        font-size: clamp(0.9375rem, 0.2664rem + 3.3557vw, 1.875rem);
+    }
+
+
+    .img-modal {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-nav-row {
+        padding: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-nav-mobile {
+        display: block;
+    }
+
+    .footer-phone {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 401px) {
+
+    .footer-contact {
+        margin-left: 5px;
+    }
+
+    .img-icon {
+        width: 3.6vw;
+        height: 3.6vw;
+    }
+
+    .footer-nav-row {
+        gap: 2vw;
+    }
+}

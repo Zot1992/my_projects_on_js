@@ -1,0 +1,623 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    /* Медленно перематывает к нужному участку на сайте */
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    font-weight: 700;
+    color: #000000;
+    padding: 5px 0px;
+    display: block;
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+.container,
+.navig-con,
+.footer-container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.header {
+    z-index: 5;
+}
+
+
+
+.navig {
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.navig-con {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.nav-row {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+}
+
+.nav-row .nav-row-string {
+    position: relative;
+}
+
+.nav-row-string {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    line-height: 45px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+
+}
+
+.nav-row-string:hover {
+    text-decoration: none;
+    background-color: #CF8502;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.button-nav:hover {
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+
+.button-nav {
+    width: 231px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.img-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.contact {
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+    padding: 5px 30px;
+    font-size: 30px;
+}
+
+.contact:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #CF8502;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+
+
+.container {
+    text-align: center;
+}
+
+.container-position-relative {
+    margin: 100px 0px;
+    position: relative;
+}
+
+.container-position-absolute {
+    position: absolute;
+}
+
+
+.h1_headings {
+    font-size: 80px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+.container_part1-sale {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+}
+
+.container_part1-sale-text {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+
+
+.container_part1-sale-h1 {
+    width: 608px;
+}
+
+.container_part1-sale-slogan {
+    font-size: 45px;
+    text-align: left;
+}
+
+.button {
+    /* Нужно что бы сбросить стандартную стилизацию кнопки */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    background: #ffffff;
+    font-size: 40px;
+    border-radius: 10px;
+    width: 408px;
+    line-height: 78px;
+    padding: 0px;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #CF8502;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.button:focus {
+    text-decoration: none;
+    color: #464040;
+    background-color: #7e7777;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.button>a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.button>a {
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.container_part1-sale-fon-mobile {
+    display: none;
+}
+
+.container_part1-sale-fon {
+    z-index: 0;
+    border-radius: 10px;
+    background-image: url(../img/КАртинка\ бани.png);
+    width: 818px;
+    height: 766px;
+    display: block;
+}
+
+
+.container-fon {
+    border-radius: 10px;
+    border: none;
+    
+}
+
+
+.fon-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container_part2-we {}
+
+.container_part2-we-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_part2-we-info-position {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_part2-we-info-position-media {
+    display: none;
+}
+
+.container_part2-we-info-position-text {
+    Width: 768px;
+    Height: auto;
+    text-align: left;
+    font-size: 30px;
+    line-height: 41px;
+
+}
+
+.container_part2-we-info-position-text:not(:last-child) {
+    /* Стилизует кроме последнего */
+    margin-bottom: 30px;
+}
+
+.container_part2-sale-fon {
+    width: 660px;
+    height: 624px;
+    background-image: url(../img/КАртинка\ бани-2.png);
+}
+
+.container_part3-catalog {}
+
+.container_part3-catalog-content {}
+
+.container_part3-catalog-content-h2 {
+    font-size: 50px;
+    text-align: left;
+}
+
+.container_part3-catalog-content-goods {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_part3-catalog-content-stylization:not(:nth-child(1)) {
+    /*  Кроме первого и второго элемента делает отступ */
+    margin-top: 50px;
+}
+
+.container_part3-catalog-content-stylization {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.container_part3-catalog-content-baths-stylization {
+    width: 1200px;
+    height: 900px;
+}
+
+
+
+.container_part3-catalog-fon-1 {
+    background-image: url(../img/Баня1.png);
+}
+
+.container_part3-catalog-fon-2 {
+    background-image: url(../img/Баня2.png);
+}
+
+.container_part3-catalog-fon-3 {
+    background-image: url(../img/Баня3.png);
+}
+
+.container_part3-catalog-fon-4 {
+    background-image: url(../img/Баня4.png);
+}
+
+.container_part3-catalog-fon-5 {
+    background-image: url(../img/Баня3.png);
+}
+
+.container_part3-catalog-fon-6 {
+    background-image: url(../img/Баня4.png);
+}
+
+.container_part3-catalog-fon-7 {
+    background-image: url(../img/Баня3.png);
+}
+
+.container_part3-catalog-fon-8 {
+    background-image: url(../img/Баня4.png);
+}
+
+.container_part3-catalog-fon-9 {
+    background-image: url(../img/Баня3.png);
+}
+
+.container_part3-catalog-fon-10 {
+    background-image: url(../img/Баня4.png);
+}
+
+
+
+.container_part3-catalog-content-baths-frame {
+    width: 1200px;
+    height: 323px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 578px;
+}
+
+.container_part3-catalog-content-baths-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+}
+
+.container_part4-contacts {
+    margin-bottom: 40px;
+}
+
+.container_part4-contacts-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_part4-contacts-info-position {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+.container_part4-contacts-info-position-text {
+    display: flex;
+    align-items: center;
+}
+
+.container_part4-contacts-info-position-text:first-child {
+    margin-bottom: 20px;
+}
+
+.container_part4-contacts-info-position-text:not(:first-child) {
+    margin: 20px 0 20px 0;
+}
+
+.img-icon-info {
+    width: 55px;
+    height: 55px;
+}
+
+.container_part4-contact-1 {
+    padding: 5px 60px;
+    font-size: 45px;
+}
+
+.container_part4-sale-fon {
+    width: 966px;
+    height: 666px;
+    background-image: url(../img/Контакты.png);
+}
+
+
+.sale {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link {}
+
+.link:hover {
+    color: #CF8502;
+}
+
+
+footer {
+    background-color: #CF8502;
+    width: 100%;
+    height: 420px;
+}
+
+.footer-container {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Inter',sans-serif;
+    padding-top: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav{
+    display: block;
+}
+
+.footer-nav-row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav-row-string{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-button-nav{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer-text-point_and_phone{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text-point{
+    
+}
+
+.footer-phone{
+    display: flex;
+}
+
+.footer-contact{
+    margin-left: 10px;
+}
+
+.footer-nav-mobile{
+    display: none;
+}
+
+
+
+
+
+
+/* Стилизация меню для планшета и телефона */
+
+
+.header__nav {
+    position: absolute;
+    right: 36px;
+    display: block;
+}
+
+.header__menu {
+    display: flex;
+    position: relative;
+    z-index: 4;
+}
+
+.header__menu li {
+    list-style: none;
+    margin: 0px 0px 0px 36px;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container-nav {
+    display: none;
+}
+
+.navig-con {
+    display: flex;
+}
+
+
+
+/* Модальный (фон) */
+.modal {
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 5;
+    /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0, 0, 0);
+    /* Цвет запасной вариант */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Черный с непрозрачностью */
+    backdrop-filter: blur(5px);
+    /* Делает фон сзади размытым */
+
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+    z-index: 10;
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_lock {
+    overflow: hidden;
+}
+
+.btn-modal {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Photos-madal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-modal {
+    width: 40%;
+    margin: 10px;
+}

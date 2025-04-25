@@ -1,0 +1,380 @@
+@media(max-width: 48em) {
+    .header-fon {
+        display: none;
+    }
+
+    .header-mobile {
+        font-size: clamp(0.625rem, 0.4044rem + 0.9804vw, 0.875rem);
+    }
+
+    .header-mobile-position {
+        display: block;
+        font-size: clamp(0.625rem, 0.4044rem + 0.9804vw, 0.875rem);
+
+    }
+
+    .header-mobile-fon {
+        color: rgb(255, 255, 255);
+        background: #211E1E;
+        height: 100%;
+        padding-bottom: 15px;
+    }
+
+    .header-up {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 15px;
+    }
+
+    .mobile-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-info-posicion {
+        display: flex;
+    }
+
+    .mobile-info-point {
+        margin-top: 20px;
+    }
+
+    .img_info_point {
+        height: 19px;
+    }
+
+    .logo-mobile {
+        background-image: url(../img/logo\ 1.svg);
+        margin-top: 15px;
+        width: 19.7%;
+        height: 0;
+        padding-top: 19.6%;
+    }
+
+    .menu-mobile {
+        font-size: clamp(0.90625rem, 0.4926rem + 1.8382vw, 1.375rem);
+    }
+
+    .nav-mobile {
+        background-color: #A90208;
+
+    }
+
+    .nav-row-mobile {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        margin: 0px 15px;
+
+    }
+
+    .nav-row-string-mobile {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .baner {
+        display: none;
+    }
+
+    .banner-img-mobile {
+        background: url(../img/заголовок\ афиша\ и\ билеты.svg) center / cover no-repeat;
+        width: 100%;
+        height: 26vw;
+    }
+
+    .container {
+        width: 100%;
+        position: static;
+        margin: 20px 0 0;
+    }
+
+    .mobile-marg {
+        margin: 0 15px;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .size_and_border-semicircle {
+        width: 9.5%;
+        padding-top: 9.5%;
+    }
+
+    h1 {
+        font-size: clamp(1.5rem, 1.0588rem + 1.9608vw, 2rem);
+        text-align: left;
+        margin: -30px 0px 30px 15px;
+    }
+
+
+    .button-up {
+        display: none;
+    }
+
+    .container_buttons {
+        margin: 20px 15px 40px 15px;
+    }
+
+    .button {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .img-size {
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+    }
+
+    .container-photo {
+        width: 28vw;
+        height: auto;
+    }
+
+    .container-photo1,
+    .container-photo2,
+    .container-photo3,
+    .container-photo4,
+    .container-photo5,
+    .container-photo6 {
+        width: 28vw;
+    }
+
+    .container-photo-line_and_semicircle-margen {
+        margin-top: 3vw;
+    }
+
+    .container-photo-semicircle {
+        border-radius: 0px 0px 0px 3.1vw;
+    }
+
+    .container-photo-size_and_border-semicircle {
+        width: 3.1vw;
+        height: 3.1vw;
+    }
+
+    .container-photo:not(:nth-child(1), :nth-child(5)) {
+        margin-left: 0px;
+    }
+
+    .container-photo:nth-child(5),
+    :nth-child(6) {
+        margin-top: 0px;
+    }
+
+    .container-photo:not(:nth-child(3), :nth-child(6)) {
+        margin-right: 2.5vw;
+    }
+
+    .container-photo-text {
+        font-size: 14px;
+    }
+
+    .line_and_semicircle-rev {
+        margin: 35px 15px;
+        top: 0;
+    }
+
+    footer {
+        height: 100%;
+        background-image: linear-gradient(to right, #9999 20%, #FFFF 50%);
+        border-top: 1px solid black;
+        font-size: clamp(0.625rem, 0.4044rem + 0.9804vw, 0.875rem);
+    }
+
+    .footer-fon {
+        display: none;
+    }
+
+    .footer-position {
+        display: none;
+    }
+
+
+
+    .footer-position-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px 0 15px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-logo-mobile {
+        background-image: url(../img/logo\ 1.svg);
+        width: 33%;
+        height: 0;
+        padding-top: 31.6%;
+        margin: auto;
+    }
+
+    .contacts-mobile {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+
+
+
+    h2 {
+        font-size: clamp(0.75rem, 0.5294rem + 0.9804vw, 1rem);
+    }
+
+    .contacts-point-img {
+        width: 2.8vw;
+        height: 3.1vw;
+    }
+
+    .socnet-icon-img-mobile {
+        width: 43px;
+        height: 43px;
+        margin-right: 10px;
+    }
+
+    .socnet-btn-mobile {
+        color: #ffffff;
+        background-color: #A90208;
+        width: 118px;
+        padding: 10px 0;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 4px;
+    }
+
+    .socnet-text {
+        color: #A90208;
+        font-size: 14px;
+    }
+
+    .widget {
+        width: 63%;
+        height: 0;
+        padding-top: 80%;
+        -webkit-box-shadow: 1px 0px 4px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 1px 0px 4px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 1px 0px 4px 0px rgba(34, 60, 80, 0.2);
+        margin: 15px auto 15px;
+
+    }
+
+    .Copyright {
+        width: 70%;
+    }
+
+    .creator {
+        text-align: right;
+    }
+}
+
+@media(max-width: 28.125em) {
+    h1 {
+
+        margin-top: -15px;
+    }
+}
+
+@media(max-width: 25em) {
+    .button:nth-child(2) {
+        margin-left: 5px;
+    }
+}
+
+
+@media(max-width: 22.5em) {
+    .logo-mobile {
+        width: 28.5%;
+        padding-top: 26.9%;
+    }
+
+    .size_and_border-semicircle {
+        width: 14.6%;
+        padding-top: 14.6%;
+    }
+
+    .container_buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .button-mobile_phone {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 0;
+        line-height: 35px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: clamp(1rem, 0.25rem + 0.8333vw, 1.25rem);
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        border: 2px solid black;
+    }
+
+    .button-mobile_phone:hover {
+        background: #ffffff;
+        color: #A90208;
+        border-color: #A90208;
+    }
+
+    .button-mobile_phone:last-child {
+        margin-top: 15px;
+    }
+
+    .container-photo {
+        width: 42vw;
+    }
+
+    .container-photo1,
+    .container-photo2,
+    .container-photo3,
+    .container-photo4,
+    .container-photo5,
+    .container-photo6 {
+        width: 42vw;
+    }
+
+    .container-photo:not(:nth-child(2), :nth-child(4), :nth-child(6)) {
+        margin-right: 2.5vw;
+    }
+
+    .container-photo-text {
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+
+    .contacts-mobile {
+        margin: 15px 0 0;
+        flex-direction: column;
+    }
+
+    .contacts-point-img {
+        width: 13px;
+        height: 14px;
+    }
+
+    .contacts-phone-img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .socnet {
+        margin-top: 15px;
+    }
+
+    .socnet-btn-mobile {
+        width: 100%;
+    }
+
+    .Copyright {
+        width: 75%;
+    }
+}

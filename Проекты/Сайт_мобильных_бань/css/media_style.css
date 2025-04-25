@@ -1,0 +1,549 @@
+@media(max-width: 1921px) {
+
+    .header,
+    .container,
+    .footer-container {
+        margin: 0px 10vw;
+    }
+
+    .nav-row {
+        gap: 1vw;
+    }
+
+    .nav-row-string {
+        line-height: 3vw;
+    }
+
+    .button-nav {
+        width: 12.1vw;
+        font-size: clamp(1.5625rem, 0.625rem + 1.0417vw, 1.875rem);
+    }
+
+    .contact {
+        padding: 0.5vw 2vw;
+        line-height: 1;
+        font-size: clamp(1.5625rem, 0.625rem + 1.0417vw, 1.875rem);
+    }
+
+    .button {
+        width: 21.258vw;
+        line-height: 4vw;
+        font-size: clamp(1.875rem, 0rem + 2.0833vw, 2.5rem);
+    }
+
+    .button>a {
+        font-size: clamp(1.875rem, 0rem + 2.0833vw, 2.5rem);
+    }
+
+    .h1_headings {
+        font-size: clamp(3.75rem, 0rem + 4.1667vw, 5rem);
+        margin-bottom: 2.7917vw;
+    }
+
+    .container_part1-sale-h1 {
+        width: 37.7vw;
+        text-transform: uppercase;
+    }
+
+    .container_part1-sale-slogan {
+        font-size: clamp(1.875rem, -0.9375rem + 3.125vw, 2.8125rem);
+
+    }
+
+    .container_part1-sale-fon {
+        width: 100%;
+        height: 0;
+        padding-top: 49.6%;
+    }
+
+    .container_part2-we-info-position {
+        padding-right: 6.07vw;
+    }
+
+    .container_part2-we-info-position-text {
+        width: 39.55vw;
+        font-size: clamp(1.25rem, -0.625rem + 2.0833vw, 1.875rem);
+        text-align: left;
+        line-height: 2.1vw;
+    }
+
+    .container_part2-sale-fon {
+        width: 100%;
+        height: 0;
+        padding-top: 40.63%;
+    }
+
+    .container_part3-catalog-content-h2 {
+        font-size: clamp(2.5rem, 0.625rem + 2.0833vw, 3.125rem);
+    }
+
+    .container_part3-catalog-content-goods {
+        margin-top: 0;
+    }
+
+    .container_part3-catalog-content-stylization {
+        height: auto;
+        width: 62.5vw;
+    }
+
+    .container_part3-catalog-content-stylization:not(:nth-child(1), :nth-child(2)) {
+        margin-top: 2.61vw;
+    }
+
+    .container_part3-catalog-content-baths-stylization {
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+    }
+
+    .container_part3-catalog-content-baths-frame {
+        width: 100%;
+        height: 16.823vw;
+        top: 30.1vw;
+    }
+
+    .container_part3-catalog-content-baths-text {
+        font-size: clamp(2.1875rem, -0.625rem + 3.125vw, 3.125rem);
+        font-weight: 700;
+        line-height: 3.5vw;
+    }
+
+    .btn-modal {
+        color: #000;
+        font-size: clamp(1.875rem, 0rem + 2.0833vw, 2.5rem);
+        font-weight: 700;
+    }
+
+    .container_part4-contacts-info-position {
+        margin-top: 1.04vw;
+    }
+
+    .container_part4-contact-1 {
+        padding: 0.265vw 3.13vw;
+        font-size: clamp(1.875rem, -0.9375rem + 3.125vw, 2.8125rem);
+    }
+
+    .container_part4-sale-fon {
+        width: 62.9%;
+        height: 0;
+        padding-top: 43.36%;
+        margin: 0;
+    }
+
+    .container_part4-contacts-info-position-text:first-child {
+        margin-bottom: 1.042vw;
+    }
+
+    .container_part4-contacts-info-position-text:not(:first-child) {
+        margin: 1.2vw 0;
+    }
+
+    .img-icon-info {
+        width: 2.8vw;
+        height: 2.8vw;
+    }
+
+    .sale {
+        font-size: clamp(1.25rem, -0.2885rem + 2.4038vw, 1.875rem);
+    }
+
+    .link {
+        font-size: clamp(1.25rem, -0.2885rem + 2.4038vw, 1.875rem);
+    }
+
+    .modal-h1 {
+        padding-left: 8vw;
+    }
+
+    footer {
+        height: 21.9vw;
+    }
+
+    .footer-container {
+        font-size: clamp(1.5625rem, 0.625rem + 1.0417vw, 1.875rem);
+        padding-top: 5.21vw;
+    }
+
+    .footer-nav-row{
+        gap: 1vw;
+    }
+
+    .footer-nav-mobile{
+        display: none;
+    }
+
+}
+
+
+
+
+@media(max-width: 1441px) {
+
+    .header,
+    .container,
+    .footer-container {
+        margin: 0px 7.2vw;
+    }
+
+    .nav-row {
+        gap: 0.9vw;
+    }
+
+    .nav-row>*+* {
+        margin-left: 0px;
+    }
+
+    .nav-row-string {
+        line-height: 3vw;
+    }
+
+    .button-nav {
+        width: 13.35vw;
+        font-size: clamp(1.25rem, 0.4782rem + 1.2048vw, 1.5625rem)
+    }
+
+    .contact {
+        padding: 0.5vw 2vw;
+        line-height: 1;
+        font-size: clamp(1.25rem, 0.4782rem + 1.2048vw, 1.5625rem)
+    }
+
+    .button {
+        width: 22vw;
+        line-height: 3.7vw;
+        font-size: clamp(1.25rem, -0.2885rem + 2.4038vw, 1.875rem);
+    }
+
+    .button>a {
+        font-size: clamp(1.25rem, -0.2885rem + 2.4038vw, 1.875rem);
+    }
+
+    .h1_headings {
+        font-size: clamp(2.8125rem, 0.497rem + 3.6145vw, 3.75rem);
+        line-height: 5.77vw;
+        margin-bottom: 2.7917vw;
+    }
+
+    .container_part1-sale-h1 {
+        width: 37.3vw;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .container_part1-sale-slogan {
+        font-size: clamp(1.875rem, 1.1032rem + 1.2048vw, 2.1875rem);
+
+    }
+
+    .container_part1-sale-fon {
+        width: 100%;
+        height: 0;
+        padding-top: 47.6%;
+    }
+
+    .container_part2-we-info-position {
+        padding-right: 5.7vw;
+    }
+
+    .container_part2-we-info-position-text {
+        width: 39.55vw;
+        font-size: clamp(0.9375rem, 0.1657rem + 1.2048vw, 1.25rem);
+        text-align: left;
+        line-height: 2vw;
+    }
+
+    .container_part2-sale-fon {
+        width: 100%;
+        height: 0;
+        padding-top: 39%;
+    }
+
+    .container_part3-catalog-content-h2 {
+        font-size: clamp(1.875rem, -0.4327rem + 3.6058vw, 2.8125rem);
+    }
+
+    .container_part3-catalog-content-goods {
+        margin-top: 0;
+    }
+
+    .container_part3-catalog-content-stylization {
+        height: auto;
+        width: 62.5vw;
+    }
+
+    .container_part3-catalog-content-stylization:not(:nth-child(1)) {
+        margin-top: 3vw;
+    }
+
+    .container_part3-catalog-content-baths-stylization {
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+    }
+
+    .container_part3-catalog-content-baths-frame {
+        width: 100%;
+        height: 16.5vw;
+        justify-content: space-evenly;
+        top: 30.4vw;
+    }
+
+    .container_part3-catalog-content-baths-text {
+        font-size: clamp(1.5625rem, 0.024rem + 2.4038vw, 2.1875rem);
+        font-weight: 700;
+        line-height: 3.5vw;
+    }
+
+    .container_part4-contacts-info-position {
+        margin-top: 0;
+    }
+
+
+
+    .container_part4-sale-fon {
+        width: 64.8%;
+        height: 0;
+        padding-top: 34%;
+        margin: 0;
+    }
+
+    .container_part4-contacts-info-position-text:first-child {
+        margin-bottom: 1vw;
+    }
+
+    .container_part4-contacts-info-position-text:not(:first-child) {
+        margin: 1vw 0;
+    }
+
+    .img-icon-info {
+        width: 2.8vw;
+        height: 2.8vw;
+    }
+
+    .sale {
+        font-size: clamp(1.25rem, -0.2885rem + 2.4038vw, 1.875rem);
+    }
+
+    .link {
+        font-size: clamp(1.25rem, -0.2885rem + 2.4038vw, 1.875rem);
+    }
+
+    footer {
+        height: 23vw;
+    }
+
+    .footer-container {
+        font-size: clamp(0.9375rem, -0.601rem + 2.4038vw, 1.5625rem);
+        padding-top: 5vw;
+    }
+
+    .footer-nav-row{
+        gap: 1vw;
+    }
+
+    .footer-nav-mobile{
+        display: none;
+    }
+
+
+
+}
+
+@media(max-width: 1025px) {
+
+    .header,
+    .container,
+    .footer-container {
+        margin: 0 12.7vw;
+    }
+
+    a {
+        padding: 0.5vw 0vw;
+    }
+
+    .button {
+        width: 20.8vw;
+        line-height: 3.6vw;
+        font-size: clamp(0.9375rem, -0.0049rem + 1.9608vw, 1.25rem);
+    }
+
+    .button>a {
+        font-size: clamp(0.9375rem, -0.0049rem + 1.9608vw, 1.25rem);
+    }
+
+    .button-nav {
+        width: 13vw;
+    }
+
+    .nav-row {
+        gap: 0.3vw;
+    }
+
+    .nav-row>*+* {
+        margin-left: 0;
+    }
+
+    .nav-row-string {
+        line-height: 1;
+    }
+
+    .nav-row-string>a {
+        font-size: clamp(0.9375rem, -0.0049rem + 1.9608vw, 1.25rem);
+    }
+
+    .contact {
+        padding: 0.5vw 2vw;
+        line-height: 1;
+        font-size: clamp(0.9375rem, -0.0049rem + 1.9608vw, 1.25rem);
+    }
+
+    .contact-nav {
+        padding: 0.5vw 1vw;
+    }
+
+    .img-icon {
+        width: 2.6vw;
+        height: 2.6vw;
+    }
+
+    .container-position-relative {
+        margin: 6vw 0px;
+    }
+
+    .h1_headings {
+        font-size: clamp(1.875rem, -0.9522rem + 5.8824vw, 2.8125rem);
+        line-height: 6vw;
+        margin-bottom: 0;
+    }
+
+    .container_part1-sale-h1 {
+        width: 37.3vw;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .container_part1-sale-text {
+        gap: 0.5vw;
+    }
+
+    .container_part1-sale-slogan {
+        font-size: clamp(1.25rem, -0.6348rem + 3.9216vw, 1.875rem);
+        line-height: 3.75vw;
+    }
+
+    .container_part1-sale-fon {
+        width: 100%;
+        height: 0;
+        padding-top: 43.9%;
+    }
+
+    .container_part2-we-info {
+        align-items: center;
+    }
+
+    .container_part2-we-info-position-text {
+        width: 39.25vw;
+    }
+
+    .container_part2-we-info-position-text {
+        font-size: clamp(0.625rem, -0.3174rem + 1.9608vw, 0.9375rem);
+        text-align: left;
+        line-height: 2vw;
+    }
+
+    .container_part2-we-info-position-text:not(:last-child) {
+        margin-bottom: 2vw;
+    }
+
+    .container_part2-sale-fon {
+        width: 100%;
+        height: 0;
+        padding-top: 43.2%;
+    }
+
+    .container_part2-we-info-position {
+        padding-right: 2vw;
+    }
+
+    .container_part3-catalog-content-h2 {
+        font-size: clamp(0.9375rem, -1.875rem + 5.8594vw, 1.875rem);
+    }
+
+    .container_part3-catalog-content-goods {
+        margin-top: 0;
+    }
+
+    .container_part3-catalog-content-stylization {
+        height: auto;
+        width: 62.6vw;
+    }
+
+    .container_part3-catalog-content-baths-stylization {
+        width: 100%;
+        height: 0;
+        padding-top: 74.8%;
+    }
+
+    .container_part3-catalog-content-baths-frame {
+        width: 100%;
+        height: 16.5vw;
+        align-items: flex-start;
+
+    }
+
+    .container_part3-catalog-content-baths-text {
+        font-size: clamp(1.25rem, 0.3125rem + 1.9531vw, 1.5625rem);
+        font-weight: 700;
+        line-height: 3.5vw;
+    }
+
+    .container_part4-contacts-info-position {
+        margin-top: 1vw;
+    }
+
+
+
+    .container_part4-sale-fon {
+        width: 61.5%;
+        height: 0;
+        padding-top: 41%;
+        margin: 0;
+    }
+
+    .container_part4-contacts-info-position-text:first-child {
+        margin-bottom: 1vw;
+    }
+
+    .container_part4-contacts-info-position-text:not(:first-child) {
+        margin: 1vw 0;
+    }
+
+    .img-icon-info {
+        width: 2.8vw;
+        height: 2.8vw;
+    }
+
+    .sale {
+        font-size: clamp(0.9375rem, 0rem + 1.9531vw, 1.25rem);
+    }
+
+    .link {
+        font-size: clamp(0.9375rem, 0rem + 1.9531vw, 1.25rem);
+    }
+
+    footer {
+        height: 17.6vw;
+    }
+
+    .footer-container {
+        padding-top: 2vw;
+    }
+
+    .footer-nav-row{
+        gap: 0.4vw;
+    }
+
+    .footer-nav-mobile{
+        display: none;
+    }
+}

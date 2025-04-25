@@ -1,0 +1,166 @@
+body {
+    background: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.wrapper {
+    position: relative;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+
+.container,
+.footer-container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+a {
+    font-weight: 700;
+    color: #000000;
+    padding: 5px 0px;
+    display: block;
+    text-decoration: none;
+}
+
+.h1_headings {
+    font-size: 80px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.Photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.photo{
+    width: 735px;
+    height: 608px;
+    border-radius: 10px;
+}
+
+.img-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.button {
+    /* Нужно что бы сбросить стандартную стилизацию кнопки */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    background: #ffffff;
+    font-size: 40px;
+    border-radius: 10px;
+    width: 408px;
+    line-height: 78px;
+    padding: 0px;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #CF8502;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.button:focus {
+    text-decoration: none;
+    color: #464040;
+    background-color: #7e7777;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.button>a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.button>a {
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.sale {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link {}
+
+.link:hover {
+    color: #CF8502;
+}
+
+footer {
+    background-color: #CF8502;
+    width: 100%;
+    height: 420px;
+}
+
+.footer-container {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    padding-top: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: block;
+}
+
+.footer-nav-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav-row-string {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-button-nav {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer-text-point_and_phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text-point {}
+
+.footer-phone {
+    display: flex;
+}
+
+.footer-contact {
+    margin-left: 10px;
+}
+
+.footer-nav-mobile {
+    display: none;
+}

@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "PTRootUIWebBold";
+  line-height: 40px;
+  margin: 40px 0px 54px;
+}
+
+.title-1000px {
+  display: block;
+}
+
+.title-720px {
+  display: none;
+}
+
+.header__body,
+.container {
+  max-width: 950px;
+  margin: 0px auto;
+}
+
+.wrapper {
+  font-family: "PTRootUIWebMedium";
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header__body {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__Logo_and_search {
+  display: flex;
+}
+.header__Logo {
+  width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__search {
+  width: 770px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.header__menu-button {
+  width: 24px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header__menu-button-bar {
+  height: 2px;
+  background-color: #D70E2A;
+}
+.header__line {
+  position: absolute;
+  width: 207px;
+  height: 3px;
+  background-color: #D70E2A;
+  left: -3%;
+  top: 100%;
+}
+.header__search-320px, .header__text_background-320px {
+  display: none;
+}
+
+.container__h1 {
+  font-size: 38px;
+  font-family: "PTRootUIWebBold";
+}
+.container__line {
+  width: 100%;
+  height: 1px;
+  padding: 0.3px;
+  -webkit-opacity: 0.3;
+  -ms-opacity: 0.3;
+  -moz-opacity: 0.3;
+  -o-opacity: 0.3;
+  opacity: 0.3;
+  background-color: black;
+}
+.container__line--translucent {
+  -webkit-opacity: 0.1;
+  -ms-opacity: 0.1;
+  -moz-opacity: 0.1;
+  -o-opacity: 0.1;
+  opacity: 0.1;
+  padding: 0.4px 0;
+  margin: 17px auto;
+}
+.container__line--highly-tran {
+  -webkit--opacity: 0.1;
+  -ms-opacity: 0.1;
+  -moz-opacity: 0.1;
+  -o-opacity: 0.1;
+  opacity: 0.1;
+}
+.container__line--complementary {
+  position: absolute;
+  width: 50px;
+  -webkit-opacity: 1;
+  -ms--opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  left: 0;
+}
+.container__line--720px {
+  display: none;
+}
+.container__line--top_margin {
+  margin-top: 25px;
+}
+.container__line--top_margin_720px {
+  margin-top: 0px;
+}
+.container__design {
+  margin-bottom: 60px;
+}
+.container__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.container__row--size-1 {
+  width: 465px;
+  height: 248px;
+}
+.container__row:first-child .container__text--size_1 {
+  margin-top: 0;
+}
+.container__colum {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  box-sizing: border-box;
+  margin: 0 10px 0px;
+}
+.container__colum--flex_1 {
+  flex: 1 1 20%;
+}
+.container__colum--size-1 {
+  width: 192px;
+  height: 113px;
+  padding-top: 20px;
+}
+.container__colum--size-2 {
+  width: 154px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+.container__colum--size-3 {
+  width: 60px;
+  height: 60px;
+}
+.container__colum:nth-child(1) {
+  margin-left: 0px;
+}
+.container__colum:nth-child(4) {
+  margin-right: 0px;
+}
+.container__colum--black {
+  background: #171717;
+  border-radius: 5px;
+  height: 304px;
+}
+.container__colum--your_size {
+  height: 346px;
+}
+.container__colum--without_alig {
+  align-items: normal;
+}
+.container__colum--left-ind {
+  margin-left: 20px;
+  margin-right: 0px;
+}
+.container__colum--no_margin:nth-child(3),
+.container__colum--no_margin :nth-child(5) {
+  margin-right: 0px;
+}
+.container__colum--no_margin:nth-child(4) {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.container__colum--centering {
+  margin: auto 21px;
+}
+.container__colum--flex_off {
+  flex: none;
+}
+.container__colum--320px {
+  display: none;
+}
+.container__text--white {
+  color: white;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container__text--no_ind {
+  margin: 0px;
+}
+.container__text--size_1 {
+  width: 343px;
+}
+.container__text--size_2 {
+  width: 303px;
+}
+.container__text--1000px {
+  display: block;
+}
+.container__text--720px {
+  display: none;
+}
+.container__accessories {
+  margin-bottom: 60px;
+}/*# sourceMappingURL=style.css.map */
