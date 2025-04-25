@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(21, 45, 205);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+    transition: 300ms;
+}
+
+.wrapper {
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    max-width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#input {}
+
+#textarea {
+    min-width: 300px;
+    max-width: 400px;
+}
+
+#input:hover,
+#textarea:hover {
+    background-color: rgba(157, 157, 157, 0.293);
+    transition: 300ms;
+}
+
+.tackscontainer-task {
+    max-width: 350px;
+    display: inline-block;
+    border: none;
+    margin: 10px 0 10px 0;
+}
+
+.tackscontainer-content {
+    margin-bottom: 10px;
+}
+
+.div-edit {
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-title,
+.edit-desk,
+.edit-title {
+    margin: 5px 0 5px 0;
+}
+
+.filtrs {
+    margin-top: 10px;
+}
+
+
+.coplited {
+    text-decoration: line-through;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
