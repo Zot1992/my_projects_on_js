@@ -1,0 +1,305 @@
+@media (max-width: 1380px) {
+    .container_part2_link {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container_part2_link {
+        width: 1090px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .container_part1_data>h1 {
+        right: 300px;
+    }
+
+    .container_part1_link {
+        width: 1000px;
+    }
+
+    .text-format {
+        font-size: 18px;
+        width: 320px;
+        height: 153px;
+    }
+
+    .container_part2 {
+        margin-left: 50px;
+    }
+
+    .container_part2_link {
+        width: 1075px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+
+    .container_part1_contend {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container_part1_data>h1 {
+        right: 400px;
+    }
+
+    .container_part1_contend_text {
+        margin: 50px auto 0px auto;
+    }
+
+    .container_part1_contend_foto {
+        margin-top: 70px;
+        margin-right: 300px;
+    }
+
+    .container_part1_link {
+        width: 800px;
+    }
+
+    .container_part2_contend {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .container_part2_data>h1 {}
+
+    .container_part2_contend_text {
+        margin-top: 30px;
+    }
+
+    .container_part2_link {
+        width: 850px;
+    }
+
+    .container_part2_contend_foto {
+        margin-top: 70px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 970px) {
+    .nav-row>*+* {
+        /*  * + *  обозначает что мы выбираем не первый элемент, а который идет после него и если у него не будет соседа слева то параметр не применяется к этому элементу */
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 890px) {
+
+    .navig-con {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .nav-row {
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .container_part2_link {
+        width: 750px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .container_part1_contend_text {
+
+        margin: -150px 0px 0px 50px;
+    }
+
+    .container_part1_data>h1 {
+        left: 0px;
+        top: 40px;
+        position: relative;
+    }
+
+    .container_part1_link {
+        width: 488px;
+        left: 0;
+        bottom: 65px;
+        position: relative;
+    }
+
+    .nav-row>*+* {
+        /*  * + *  обозначает что мы выбираем не первый элемент, а который идет после него и если у него не будет соседа слева то параметр не применяется к этому элементу */
+        margin-left: 100px;
+    }
+
+    .container_part1_contend_foto {
+        position: relative;
+
+        bottom: 180px;
+        margin-right: 0;
+    }
+
+    .container_part2_data>h1 {
+        position: relative;
+        left: 0px;
+        top: 45px;
+    }
+
+    .container_part2_link {
+        position: relative;
+        width: 488px;
+        left: 0;
+        bottom: 65px;
+    }
+
+    .container_part2_contend_foto {
+
+        bottom: 180px;
+        margin-right: 50px;
+        position: relative;
+    }
+
+    .container_part2_contend_text {
+
+        margin: -150px 0px 0px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-row>*+* {
+        /*  * + *  обозначает что мы выбираем не первый элемент, а который идет после него и если у него не будет соседа слева то параметр не применяется к этому элементу */
+        margin-left: 50px;
+    }
+
+    .container {
+        margin: 50px auto 120px auto;
+    }
+
+    .container_part2_contend_foto {
+        width: 500px;
+    }
+
+    .footer_nav {
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .priziv {
+
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .nav-row {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 50px;
+        padding-left: 0;
+    }
+
+    .container_part1_link {
+        width: 300px;
+    }
+
+    .container_part2_link {
+        width: 300px;
+    }
+
+    .container_part2_contend_foto {
+
+        width: 400px;
+    }
+
+    .container_part2_contend_text {
+        margin: -150px 0px 0px 20px;
+    }
+
+
+}
+
+@media (max-width: 465px) {
+    .container_part1_contend_foto {
+        margin-right: 50px;
+        width: 320px;
+
+    }
+
+    .container_part2_contend_foto {
+
+        width: 350px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .container_part1_link {
+        width: 250px;
+        left: 0px;
+    }
+
+    .container_part1_contend_foto {
+        margin-right: 50px;
+        width: 280px;
+    }
+
+    .container_part1_contend_text {
+        margin: -150px 0px 0px 10px;
+        font-size: 16px;
+        width: 270px;
+        height: 133px;
+    }
+
+    .container_part2_data>h1 {
+        left: -10px;
+    }
+
+    .container_part2_link {
+        width: 250px;
+        left: -10px;
+    }
+
+    .container_part2_contend_text {
+        margin: -150px 0px 0px -40px;
+        font-size: 16px;
+        width: 270px;
+        height: 133px;
+    }
+
+    .container_part2_contend_foto {
+
+        width: 300px;
+    }
+
+    .o_nas_text {
+
+        width: 281px;
+
+    }
+
+    .o_nas_logo {
+        margin-left: 0;
+    }
+
+    .priziv {
+        margin-left: 0;
+        width: 281px;
+    }
+}

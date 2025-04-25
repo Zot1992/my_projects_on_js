@@ -1,0 +1,314 @@
+body {
+    background: center center no-repeat, #ffffff;
+    position: relative;
+    /* Цвет фона и путь к файлу */
+    margin: 0;
+    color: #2f2c2c;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 14px;
+    flex-direction: column;
+    width: 100%;
+}
+a,h1{
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+}
+
+
+.header {
+    box-sizing: border-box;
+}
+
+.navig {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.navig-con {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 80px;
+    display: flex;
+
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.logo_img {
+    display: inline-block;
+    width: 75px;
+    height: 69px;
+    background-image: url(../img/Rectangle\ 14.png);
+    background-position: center center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+
+.nav-row {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.nav-row>*+* {
+    /*  * + *  обозначает что мы выбираем не первый элемент, а который идет после него и если у него не будет соседа слева то параметр не применяется к этому элементу */  
+    margin-left: 200px;
+} 
+
+.nav-row>li {
+    display: inline-block;
+    align-items: center;
+    width: 138px;
+    height: 46px;
+    /* margin-left: 110px; */
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.nav-row>li:hover {
+    text-decoration: none;
+    background-color: #FF8C00;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.nav-row>li>a {
+    font-family: 'HelveticaNeueCyr-Roman';
+    text-decoration: none;
+}
+
+.nav-row>li>a:link {
+    text-decoration: none;
+    color: #151414;
+}
+
+.nav-row>li>a:visited {
+    text-decoration: none;
+    color: #1c1a1a;
+}
+
+.container {
+    max-width: 1300px;
+    font-size: 14px;
+    text-align: center;
+
+    margin-top: 70px;
+    margin: 160px auto 120px auto;
+
+}
+
+.container_part1 {}
+
+.container_part1_data {
+    position: relative;
+}
+
+.container_part1_data>h1 {
+    position: absolute;
+    right: 480px;
+    font-size: 40px;
+    bottom: -64px;
+}
+
+.container_part1_link {
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    width: 1130px;
+    height: 120px;
+    background-color: #FF8C00;
+    bottom: -70px;
+    left: -30px;
+}
+
+.container_part1_contend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_part1_contend_foto {
+    margin-left: 50px;
+}
+
+.container_part1_contend_text {
+    margin-right: 300px;
+
+}
+
+.text-format {
+    font-size: 20px;
+    display: flex;
+    width: 420px;
+    height: 193px;
+    background-color: #F8F2F2;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container_part2 {
+    margin-left: 110px;
+    margin-top: 150px;
+}
+
+.container_part2_data {
+    position: relative;
+}
+
+.container_part2_data>h1 {
+    position: absolute;
+    left: 80px;
+    font-size: 40px;
+    bottom: -64px;
+}
+
+.container_part2_link {
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    width: 1260px;
+    height: 120px;
+    background-color: #FF8C00;
+    bottom: -70px;
+    left: -30px;
+}
+
+
+
+.container_part2_contend {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.container_part2_contend_text {}
+
+.container_part2_contend_foto {
+    margin-right: 50px;
+}
+
+
+
+
+
+.footer {
+    background: #FF8C00;
+    padding-top: 45px;
+    padding-bottom: 130px;
+    color: rgba(0, 0, 0);
+}
+
+.footer_nav {
+    max-width: 1300px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+}
+
+.o_nas {
+    display: flex;
+    flex-direction: column;
+}
+
+.o_nas_logo {
+    display: inline-block;
+    background-image: url(../img/Rectangle\ 15.svg);
+    width: 83px;
+    height: 83px;
+}
+
+.o_nas_text {
+    font-size: 20px;
+    width: 310px;
+    height: 98px;
+    text-align: left;
+}
+
+.menu {
+    width: 138px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_nav {
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 70px;
+    margin-bottom: 0;
+}
+
+.menu_nav2 {
+    display: flex;
+    font-size: 20px;
+    padding-left: 0;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu_nav2>li {
+    list-style-type: none;
+    /*убирает маркер у тега li */
+    margin-top: 9px;
+}
+
+.menu_nav2>li>a {
+    font-family: 'HelveticaNeueCyr-Roman';
+    text-decoration: none;
+}
+
+.menu_nav2>li>a:link {
+    text-decoration: none;
+    color: #151414;
+}
+
+.menu_nav2>li>a:visited {
+    text-decoration: none;
+    color: #1c1a1a;
+}
+
+.priziv {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 351px;
+    height: 192px;
+    margin-top: 16px;
+}
+
+.priziv_h {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 19px;
+    margin-top: 15px;
+}
+
+.priziv_text {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px
+}
+
+.priziv_img>img {
+    margin-right: 10px;
+}

@@ -1,0 +1,288 @@
+@media (max-width: 1320px) {
+    .container_part2 :nth-child(3n) {
+        margin-right: 10px;
+    }
+
+    .container_part2 :nth-child(3n-2) {
+
+        margin-left: 10px;
+    }
+
+    .format {
+        width: 420px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 1282px) {
+    .container_part2 {
+        position: relative;
+        margin-top: -750px;
+        align-content: flex-end;
+    }
+    .format {
+        width: 350px;
+        height: 280px;
+        margin-top: 5px;
+
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+
+    .container_part2 {
+        height: 2050px;
+    }
+
+    .container_part2 :nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .container_part2 :nth-child(3n-2) {
+
+        margin-left: 0;
+    }
+
+    .container_part2 :nth-child(2n) {
+        margin-right: 10px;
+    }
+
+    .container_part2 :nth-child(2n-1) {
+
+        margin-left: 10px;
+    }
+
+    .format {
+        width: 420px;
+        height: 340px;
+    }
+
+
+    .container_part2_foto_img11 {
+        display: none;
+    }
+
+    .container_part2_foto_img12 {
+        display: none;
+    }
+
+    .container_part2_foto_img13 {
+        display: none;
+    }
+
+    .container_part2_foto_img14 {
+        display: none;
+    }
+
+    .container_part2_foto_img15 {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .kvadrat {
+        display: none;
+    }
+    .container_part2 {
+        
+        margin-top: -270px;
+       
+    }
+}
+
+@media (max-width: 970px) {
+    .nav-row>*+* {
+        /*  * + *  обозначает что мы выбираем не первый элемент, а который идет после него и если у него не будет соседа слева то параметр не применяется к этому элементу */
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 890px) {
+
+    .navig-con {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .nav-row {
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container_part2 {
+        height: 1840px;
+    }
+
+    .format {
+        width: 360px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .container_part2 {
+        height: 1700px;
+    }
+
+    .format {
+        width: 325px;
+        height: 265px;
+    }
+
+}
+
+@media (max-width: 761px) {
+
+    .nav-row>*+* {
+        /*  * + *  обозначает что мы выбираем не первый элемент, а который идет после него и если у него не будет соседа слева то параметр не применяется к этому элементу */
+        margin-left: 100px;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    .nav-row>*+* {
+        /*  * + *  обозначает что мы выбираем не первый элемент, а который идет после него и если у него не будет соседа слева то параметр не применяется к этому элементу */
+        margin-left: 50px;
+    }
+
+    .container_part2 {
+        height: 4020px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container_part2 :nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .container_part2 :nth-child(2n-1) {
+
+        margin-left: 0;
+    }
+
+
+    .container_part2 :nth-child(1n) {
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+
+    .format {
+        width: 425px;
+        height: 365px;
+    }
+
+
+
+    .footer_nav {
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .priziv {
+
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .container_part1>nav>ul {
+        padding: 0;
+    }
+
+    .container_part1>nav>ul>button {
+        margin-left: 50px;
+    }
+
+    .button_1 {
+
+        margin-right: 40px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .nav-row {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 50px;
+        padding-left: 0;
+    }
+
+    .container_part2 {
+        
+        margin-bottom: 50px
+    }
+
+    .container {
+        margin: 0;
+    }
+}
+
+@media (max-width: 440px) {
+
+
+    
+
+    .container_part1>h1 {
+
+
+        margin-left: 70px;
+    }
+
+    .container_part1>nav>ul>button {
+        width: 128px;
+        margin-left: 20px;
+    }
+
+    .container_part2 {
+         height: 3020px; 
+        
+    }
+
+    .format {
+        width: 325px;
+        height: 265px;
+    }
+}
+
+@media (max-width: 390px) {
+
+
+
+    .o_nas_text {
+
+        width: 281px;
+
+    }
+
+    .o_nas_logo {
+        margin-left: 0;
+    }
+
+    .priziv {
+        margin-left: 0;
+        width: 281px;
+    }
+}
