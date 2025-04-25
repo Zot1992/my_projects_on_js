@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Список фруктов</h1>
+        <div>
+            <label for="minCalor">Мин.калории</label>
+            <input id="minCalor" type="number">
+
+            <label for="maxCalor">Макс.калории</label>
+            <input id="maxCalor" type="number">
+        </div>
+
+        <div class="wrapper__centering">
+            <ul id="fruitList"></ul>
+        </div>
+
+
+        <div>Общая калорийность:
+            <span id="calor">0</span>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
