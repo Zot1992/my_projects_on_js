@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1400px;
+    text-align: center;
+}
+
+#textInput {
+    width: 540px;
+    margin-bottom: 10px;
+}
+
+#input {
+    width: 415px;
+    margin-bottom: 20px;
+}
+
+
+
+#btn,
+#btn2 {
+    width: 120px;
+    cursor: pointer;
+}
+
+#btn:hover,
+#btn2:hover {
+    background-color: rgba(255, 0, 0, 0.648);
+    transition: 300ms;
+}
+
+#startIndex,
+#endIndex {
+    width: 63px;
+    margin-bottom: 30px;
+}
+
+#textInput:hover,
+#input:hover,
+#startIndex:hover,
+#endIndex:hover {
+    background-color: rgba(157, 157, 157, 0.293);
+    transition: 300ms;
+}
+
+#resalt {
+    padding: 10px;
+    border-radius: 21px;
+    display: inline-block;
+    border: none;
+    /* По умолчанию без рамки */
+}
+
+#resalt:not(:empty) {
+    border: 1px solid black;
+    /* Рамка появляется при наличии содержимого */
+}
