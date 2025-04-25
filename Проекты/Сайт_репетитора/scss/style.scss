@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background: #F2DCDE;
+    font-family: 'Golos Text';
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    font-weight: 100;
+    color: #042E84;
+    padding: 5px 30px;
+    display: block;
+    text-decoration: none;
+}
+
+.button {
+    /* Нужно что бы сбросить стандартную стилизацию кнопки */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: solid 1px #042E84;
+    color: #042E84;
+    background: #F2DCDE;
+    font-size: 25px;
+    border-radius: 43px;
+    width: 402px;
+    line-height: 65px;
+    padding: 0px;
+
+
+    &:hover {
+        text-decoration: none;
+        color: #ffffff;
+        background: #F31619;
+        border: solid 1px #ffffff;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+
+    &:focus {
+        text-decoration: none;
+        color: #464040;
+        background-color: #7e7777;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+
+    &>a:hover {
+        text-decoration: none;
+        color: #ffffff;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+    }
+
+    &>a {
+        text-decoration: none;
+        color: #042E84;
+    }
+}
+
+
+
+.wrapper {
+    position: relative;
+    font-size: 20px;
+    color: #042E84;
+    text-align: center;
+}
+
+.menu {
+    &__item {
+        border: solid 1px #042E84;
+        border-radius: 43px;
+        display: inline-block;
+        align-items: center;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            background: #F31619;
+            border: solid 1px #ffffff;
+            -webkit-transition: 300ms;
+            transition: 300ms;
+        }
+
+        &>a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            -webkit-transition: 300ms;
+            transition: 300ms;
+        }
+
+        &>a {
+            text-decoration: none;
+        }
+    }
+
+
+}
+
+.header {
+    &__body {
+        left: 0;
+        top: 0;
+        width: 100%;
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+    }
+
+    &__container {}
+
+    .container-nav--comp {
+        width: 100%;
+        max-width: 1387px;
+        margin: 0 auto;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__nav--comp {}
+
+    &__menu_row {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+
+        &>*+* {
+            margin-left: 100px;
+        }
+    }
+}
+
+
+.container {
+    max-width: 1387px;
+    text-align: center;
+    margin: auto;
+
+    .h1_headings {
+        font-size: 70px;
+        text-align: left;
+    }
+
+    &--image {
+        border-radius: 43px;
+        border: none;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &__sale {
+        margin: -30px 0px 70px 0px;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        &-h1 {
+            text-align: left;
+            margin: 0;
+            font-size: 70px;
+        }
+
+        &-slogan {
+            display: block;
+            font-size: 50px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        &-slogan-media {
+            display: none;
+        }
+
+        &-image {
+            background-image: url(../img/Andrey_1.png);
+            width: 925px;
+            height: 635px;
+        }
+
+        &-image--media {
+            display: none;
+        }
+    }
+
+    &__we,
+    &__Price {
+        margin: 170px 0px;
+        position: relative;
+    }
+
+    &__we {
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-text {
+            width: 544px;
+            height: auto;
+            text-align: left;
+            font-size: 25px;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &-image {
+            width: 785px;
+            height: 580px;
+            background-image: url(../img/Group_4_11zon.jpg);
+        }
+    }
+
+    &__Price {
+        &-catalog {
+            display: flex;
+            justify-content: space-between;
+
+            &--position {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &-stylization_sum {
+            width: 613px;
+            height: 107px;
+            border-radius: 43px;
+            background: #042E84;
+            color: #ffffff;
+            font-size: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-stylization_point {
+            width: 613px;
+            height: 182px;
+            border-radius: 43px;
+            background: #ffffff;
+            color: #042E84;
+            font-size: 35px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+
+        &-point {
+            text-align: left;
+
+            &--h {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+
+
+        &-image {
+            background-image: url(../img/Group\ 7.png);
+            width: 755px;
+            height: 585px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-text {
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+                margin-top: 50px;
+            }
+        }
+
+        &-img-icon {
+            width: 42px;
+            height: 42px;
+            margin-right: 30px;
+        }
+
+        .contact {
+            font-size: 35px;
+        }
+    }
+
+    .sale {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .link {
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}

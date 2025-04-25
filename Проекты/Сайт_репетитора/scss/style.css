@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background: #F2DCDE;
+  font-family: "Golos Text";
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a {
+  font-weight: 100;
+  color: #042E84;
+  padding: 5px 30px;
+  display: block;
+  text-decoration: none;
+}
+
+.button {
+  /* Нужно что бы сбросить стандартную стилизацию кнопки */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: solid 1px #042E84;
+  color: #042E84;
+  background: #F2DCDE;
+  font-size: 25px;
+  border-radius: 43px;
+  width: 402px;
+  line-height: 65px;
+  padding: 0px;
+}
+.button:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: #F31619;
+  border: solid 1px #ffffff;
+  transition: 300ms;
+}
+.button:focus {
+  text-decoration: none;
+  color: #464040;
+  background-color: #7e7777;
+  transition: 300ms;
+}
+.button > a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 300ms;
+}
+.button > a {
+  text-decoration: none;
+  color: #042E84;
+}
+
+.wrapper {
+  position: relative;
+  font-size: 20px;
+  color: #042E84;
+  text-align: center;
+}
+
+.menu__item {
+  border: solid 1px #042E84;
+  border-radius: 43px;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+}
+.menu__item:hover {
+  text-decoration: none;
+  background: #F31619;
+  border: solid 1px #ffffff;
+  transition: 300ms;
+}
+.menu__item > a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 300ms;
+}
+.menu__item > a {
+  text-decoration: none;
+}
+
+.header__body {
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+.header .container-nav--comp {
+  width: 100%;
+  max-width: 1387px;
+  margin: 0 auto;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__menu_row {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+}
+.header__menu_row > * + * {
+  margin-left: 100px;
+}
+
+.container {
+  max-width: 1387px;
+  text-align: center;
+  margin: auto;
+}
+.container .h1_headings {
+  font-size: 70px;
+  text-align: left;
+}
+.container--image {
+  border-radius: 43px;
+  border: none;
+  background-position: center center;
+  background-size: cover;
+}
+.container__sale {
+  margin: -30px 0px 70px 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.container__sale-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container__sale-h1 {
+  text-align: left;
+  margin: 0;
+  font-size: 70px;
+}
+.container__sale-slogan {
+  display: block;
+  font-size: 50px;
+  text-align: left;
+  font-weight: bold;
+}
+.container__sale-slogan-media {
+  display: none;
+}
+.container__sale-image {
+  background-image: url(../img/Andrey_1.png);
+  width: 925px;
+  height: 635px;
+}
+.container__sale-image--media {
+  display: none;
+}
+.container__we, .container__Price {
+  margin: 170px 0px;
+  position: relative;
+}
+.container__we-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__we-text {
+  width: 544px;
+  height: auto;
+  text-align: left;
+  font-size: 25px;
+}
+.container__we-text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.container__we-image {
+  width: 785px;
+  height: 580px;
+  background-image: url(../img/Group_4_11zon.jpg);
+}
+.container__Price-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+.container__Price-catalog--position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__Price-stylization_sum {
+  width: 613px;
+  height: 107px;
+  border-radius: 43px;
+  background: #042E84;
+  color: #ffffff;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__Price-stylization_point {
+  width: 613px;
+  height: 182px;
+  border-radius: 43px;
+  background: #ffffff;
+  color: #042E84;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.container__Price-point {
+  text-align: left;
+}
+.container__Price-point--h {
+  font-weight: bold;
+}
+.container__contacts {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.container__contacts-image {
+  background-image: url(../img/Group\ 7.png);
+  width: 755px;
+  height: 585px;
+}
+.container__contacts-info {
+  display: flex;
+  flex-direction: column;
+}
+.container__contacts-text {
+  display: flex;
+  align-items: center;
+}
+.container__contacts-text:last-child {
+  margin-top: 50px;
+}
+.container__contacts-img-icon {
+  width: 42px;
+  height: 42px;
+  margin-right: 30px;
+}
+.container__contacts .contact {
+  font-size: 35px;
+}
+.container .sale {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .link:hover {
+  color: #ff0000;
+}/*# sourceMappingURL=style.css.map */

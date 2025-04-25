@@ -1,0 +1,129 @@
+@media(max-width: 767px) {
+
+    .lock {
+        overflow: hidden;
+    }
+
+    .blur {
+        filter: blur(5px);
+    }
+
+    .header {
+        margin: 0;
+
+        height: 60px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        height: 80px;
+
+        display: flex;
+        padding: 5px 0;
+        align-items: center;
+        justify-content: space-between;
+
+        .container-nav--mobile {
+            display: block;
+        }
+
+        .container-nav--comp {
+            display: none;
+        }
+
+        &__nav--mobile {
+            display: block;
+            position: absolute;
+            left: 0;
+            background: rgb(255 255 255);
+            box-shadow: #ccc;
+            width: 100%;
+            box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+            transition: all 0.4s ease;
+            top: -500px;
+            z-index: 3;
+
+            &.open-menu {
+                top: 30px;
+                z-index: 3;
+            }
+        }
+
+        &__menu {
+            display: block;
+        }
+    }
+
+
+    .menu {
+        &__item--mobile {
+            margin: 50px 0px 50px 33px;
+            font-size: 18px;
+            color: #042E84;
+        }
+
+        &-burger__header {
+            position: relative;
+            width: 40px;
+            height: 35px;
+            display: block;
+            margin-left: 10px;
+            z-index: 4;
+
+            & span,
+            &:after,
+            &:before {
+                height: 3px;
+                width: 100%;
+                position: absolute;
+                background: #042E84;
+                margin: 0 auto;
+                transition: all 0.3s ease 0s;
+            }
+
+            & span {
+                top: 16px;
+            }
+
+            &:after,
+            &:before {
+                content: '';
+            }
+
+            &:after {
+                bottom: 5px;
+            }
+
+            &:before {
+                top: 5px;
+            }
+
+            &.open-menu span {
+                opacity: 0;
+                transition: 0.4s;
+                transform: scale(0);
+            }
+
+            &.open-menu:before {
+                transform: rotate(38deg);
+                top: 16px;
+                transition: 0.4s;
+            }
+
+            &.open-menu:after {
+                transform: rotate(-38deg);
+                bottom: 16px;
+                transition: 0.4s;
+            }
+
+
+        }
+    }
+
+    .Text_for_menu {
+        position: absolute;
+        left: 180%;
+        top: -14px;
+    }
+}

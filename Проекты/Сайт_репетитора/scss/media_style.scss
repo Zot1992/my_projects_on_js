@@ -1,0 +1,300 @@
+@media(max-width: 1460px) {
+
+    .button {
+        font-size: clamp(1.125rem, 0.6097rem + 1.0736vw, 1.5625rem);
+        width: 27.651vw;
+    }
+
+    .h1_headings {
+        font-size: clamp(3.125rem, 1.5741rem + 3.231vw, 4.375rem);
+    }
+
+    .container {
+        margin: 0 40px 0;
+
+        &__we,
+        &__Price {
+            margin: 11.6vw 0px;
+        }
+
+        &__sale {
+            margin: -2vw 0px 70px 0px;
+            position: relative;
+
+            &-h1 {
+                font-size: clamp(3.125rem, 1.5741rem + 3.231vw, 4.375rem);
+            }
+
+            &-slogan {
+                font-size: clamp(1.875rem, 0.3241rem + 3.231vw, 3.125rem);
+                font-weight: 400px;
+            }
+
+            &-image {
+                width: 66%;
+                height: 0;
+                padding-top: 45.5%;
+            }
+        }
+
+        &__we {
+            &-info {
+                align-items: center;
+            }
+
+            &-text {
+                width: calc(43vw - 60px);
+                margin-right: 20px;
+            }
+
+            &-image {
+                width: 60%;
+                height: 0;
+                padding-top: 41.5%;
+            }
+        }
+
+        &__Price {
+
+            &-stylization_sum,
+            &-stylization_point {
+                width: 43vw;
+            }
+        }
+
+        &__contacts {
+            &-image {
+                width: 54%;
+                height: 0;
+                padding-top: 41.5%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1135px) {
+
+    .container {
+
+        &__we {
+            &-text {
+                font-size: clamp(1.0625rem, 0.4085rem + 1.3624vw, 1.375rem);
+            }
+        }
+
+        &__Price {
+            &-stylization_sum {
+                font-size: clamp(2.1875rem, 1.5335rem + 1.3624vw, 2.5rem);
+            }
+
+            &-stylization_point {
+                height: 50%;
+                font-size: clamp(1.25rem, -0.7119rem + 4.0872vw, 2.1875rem);
+            }
+        }
+    }
+
+    .img-icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 20px;
+    }
+
+    .contact {
+        font-size: clamp(1.5625rem, 0.9085rem + 1.3624vw, 1.875rem);
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .container {
+
+        .h1_headings {
+            font-size: clamp(3.125rem, -0.625rem + 7.8125vw, 4.375rem);
+            text-align: left;
+        }
+
+        &__we {
+            &-text {
+                &--margin {
+                    margin: 0px;
+                }
+            }
+        }
+
+        &__contacts {
+            &-image {
+                margin-top: 50px;
+                width: 54%;
+                height: 0;
+                padding-top: 41.5%;
+            }
+
+            &-text:last-child {
+                margin-top: 3vw;
+            }
+
+            .contact{
+                font-size: clamp(1.25rem, -1.5625rem + 5.8594vw, 2.1875rem);
+            }
+        }
+        
+    }
+
+    .button {
+        width: 290px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .button {
+        width: 100%;
+        font-size: clamp(1.25rem, 0.5789rem + 3.3557vw, 2.1875rem);
+    }
+
+    .height {
+        height: 100%;
+    }
+
+    .container {
+        margin: 0px 4vw;
+
+        .h1_headings {
+            font-size: clamp(2.5rem, 0.0117rem + 11.7096vw, 5.625rem);
+            text-align: center;
+        }
+
+        &__we,
+        &__Price {
+            margin: 10vw 0px;
+        }
+
+        &__sale {
+            margin: 70px 0px 10vw 0px;
+        }
+
+        &__sale {
+            justify-content: space-between;
+            flex-direction: column;
+
+            &-h1 {
+                font-size: clamp(2.5rem, 0.0117rem + 11.7096vw, 5.625rem);
+                text-align: center;
+            }
+
+            &-pc {
+                display: none;
+            }
+
+            &-image--media {
+                display: block;
+            }
+
+            &-slogan {
+                display: none;
+            }
+
+            &-slogan-media {
+                display: block;
+                font-size: clamp(1.25rem, -0.243rem + 7.0258vw, 3.125rem);
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+
+        &__we {
+            &-text {
+                font-size: clamp(1.25rem, -0.243rem + 7.0258vw, 3.125rem);
+                width: 100%;
+                text-align: center;
+            }
+
+            &-info {
+                justify-content: space-between;
+                flex-direction: column;
+            }
+        }
+
+        &__Price {
+            flex-direction: column;
+
+            &-catalog {
+                display: flex;
+                flex-direction: column;
+
+                &--position:last-child {
+                    margin-top: 25px;
+                }
+            }
+
+            &-stylization_sum,
+            &-stylization_point {
+                font-size: clamp(1.875rem, 0.8797rem + 4.6838vw, 3.125rem);
+            }
+
+            &-stylization_sum {
+                height: 16vw;
+            }
+
+            &-stylization_point {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &-point {
+                text-align: center;
+                margin: 2vw 0px;
+            }
+        }
+
+        &__contacts {
+            flex-direction: column-reverse;
+
+            &-info {
+                flex-direction: column;
+                margin: auto;
+            }
+
+            &-text:last-child {
+                margin-top: 5vw;
+            }
+
+            &-img-icon {
+                width: 10vw;
+                height: 10vw;
+                margin-right: 4vw;
+            }
+
+            .contact {
+                font-size: clamp(1.25rem, -0.243rem + 7.0258vw, 3.125rem);
+            }
+        }
+
+        .sale {
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(1.25rem, 0.2547rem + 4.6838vw, 2.5rem);
+
+            .link {
+                padding: 2vw 2vw;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .media-image {
+        margin-top: 30px;
+        width: 100%;
+        height: 0;
+        padding-top: 83.5%;
+    }
+
+    .media-size {
+        width: 100%;
+    }
+
+    .media-text_sum {
+        font-size: clamp(1.875rem, 0.9801rem + 4.4743vw, 3.125rem);
+    }
+}
