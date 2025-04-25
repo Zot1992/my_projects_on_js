@@ -24,7 +24,6 @@ const protectNotesBtn = document.querySelector('#protectNotesBtn');
 const password = document.querySelector('#password');
 const passwordSection = document.querySelector('.password-section');
 
-
 let arrNote = []; // Хранит все заметки.
 
 function presenceTag(arr, index) { // Проверка наличия тегов. Если они есть, то выводит на экран
@@ -497,7 +496,6 @@ saveNoteBtn.addEventListener('click', function () {
     }
 })
 
-
 completed.addEventListener('click', function () { //Показывает выполненные
 
     notesList.textContent = '';
@@ -695,7 +693,6 @@ generateReportBtn.addEventListener('click', function () {
     totalChars.textContent = countChar;
     totalWords.textContent = countWords;
 })
-
 
 protectNotesBtn.addEventListener('click', function () {
 
